@@ -1,5 +1,6 @@
 import './Square.css';
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import {solution} from "./App.js"
 
 function Square({row,column,attempt, textUpdate}) {
     const [letter, setLetter] = useState(' ');
@@ -20,6 +21,7 @@ function Square({row,column,attempt, textUpdate}) {
             setBackgroundCellColor('cuadradoamarillo');
           }
         }
+      
            
     }, [attempt]);
 
